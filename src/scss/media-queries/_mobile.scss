@@ -1,0 +1,39 @@
+@import '../components/color';
+@media (max-width:767px){
+    .header{
+        nav{
+          .menuBtn{
+            display: initial;
+          }
+          #menuBtn:checked ~ul{
+             left: 0;
+          }
+          #menuBtn:checked ~label i::before{
+            content: '\f00d';
+          }
+          }
+            ul{
+                position: fixed;
+                background-color: $mobile-nav-backgorund;
+                width: 100%;
+                height: calc(100vh - 80px);
+                top: 80px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                left: -100%;
+                transition: all .5s;
+                li{
+                 display: block;
+                 width: 80%;
+                 text-align: center;
+                 line-height: 4rem;
+                 a{
+                    display: block;
+                    font-size: 1.2rem;
+                 }
+                }
+            }
+        }
+    }

@@ -1,0 +1,65 @@
+@import '../components/color';
+
+.header{
+  nav{
+    position: fixed;
+    background-color: $mobile-nav-backgorund;
+    width: 100%;
+    height: 80px;
+    #menuBtn{
+        display: none;
+    }
+    .menuBtn{
+        font-size: 2rem;
+        color: $logo-color;
+        float: right;
+        line-height: 80px;
+        margin-right: 2rem;
+        display: none;
+    }
+    .logo{
+        display: inline-block;
+        a{
+            color: $logo-color;
+            font-size: 2rem;
+            padding: 0 3rem;
+            line-height: 80px;
+        }
+    }
+    ul{
+        float: right;
+        margin-right: 2rem;
+        line-height: 80px;
+        li{
+            display: inline-block;
+            margin: 0 .2rem;
+            a{
+                color: $logo-color;
+                font-size: 1rem;
+                padding: .5rem;
+                border-radius: 3px;
+                &:hover{
+                    background-color: $hover;
+                }
+            }
+            .active{
+                background-color: $active;
+            }
+        }
+  
+    }
+  }
+}
+.main{
+    .slider{
+        background: url(/public/images/kayak1\ 1.png) no-repeat;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+    }
+    .content{
+        p{
+            padding: 2rem;
+        }
+    }
+}
